@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chalupa Na Chmelnici | Ubytování v srdci Třeboně</title>
+    <meta name="description" content="Pronájem chalupy a apartmánů v Třeboni s kapacitou až 11 osob. Zahrada, gril, parkování a kousek do Lázní Berta.">
+    
+    <meta property="og:title" content="Chalupa Na Chmelnici - Třeboň">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="img/og-image.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LodgingBusiness",
+      "name": "Chalupa Na Chmelnici",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Na Chmelnici 387",
+        "addressLocality": "Třeboň",
+        "postalCode": "379 01",
+        "addressCountry": "CZ"
+      },
+      "telephone": "+420724233469"
+    }
+    </script>
+</head>
+<body>
+
+    <header id="main-nav">
+        <div class="nav-container">
+            <a href="#" class="logo" id="site-logo">Na Chmelnici</a>
+            <button class="mobile-toggle" aria-label="Otevřít menu"><i class="fa-solid fa-bars"></i></button>
+            <nav class="nav-links">
+                <a href="#o-nas">O chalupě</a>
+                <a href="#ubytovani">Pokoje a ceník</a>
+                <a href="#lokalita">Lokalita</a>
+                <a href="#rezervace" class="btn-primary">Rezervovat</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1 id="hero-title">Váš klidný úkryt</h1>
+            <p id="hero-subtitle">Načítám data...</p>
+            <a href="#ubytovani" class="btn-large">Prohlédnout apartmány</a>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <section id="o-nas" class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Co u nás najdete</h2>
+                <p>Zázemí pro rodinnou dovolenou i aktivní odpočinek.</p>
+            </div>
+            <div id="amenities-grid" class="grid-4"></div>
+        </div>
+    </section>
+
+    <section id="ubytovani" class="section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Možnosti ubytování</h2>
+                <p>Pronajměte si chalupu jako celek, nebo si vyberte konkrétní apartmán.</p>
+            </div>
+            <div id="rooms-grid" class="grid-2"></div>
+        </div>
+    </section>
+
+    <section id="lokalita" class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Kde nás najdete</h2>
+                <p>Kousek do přírody i za kulturou.</p>
+            </div>
+            <div class="location-wrapper">
+                <div id="map-container"></div>
+                <div class="poi-list">
+                    <h3>V docházkové vzdálenosti:</h3>
+                    <ul id="poi-items"></ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="rezervace" class="section-padding bg-dark text-white text-center">
+        <div class="container">
+            <h2>Zaujala vás naše chalupa?</h2>
+            <p>Ověřte si volné termíny a vytvořte rezervaci přes naše partnery.</p>
+            <div class="booking-buttons" id="booking-links-container">
+                </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h3 id="footer-name">Na Chmelnici</h3>
+                <p id="footer-address"></p>
+            </div>
+            <div class="footer-col">
+                <h3>Kontakt</h3>
+                <p id="footer-phone"></p>
+                <p id="footer-email"></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> Chalupa Na Chmelnici.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="app.js"></script>
+</body>
+</html>
