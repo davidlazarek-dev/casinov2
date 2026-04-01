@@ -1,0 +1,88 @@
+{
+  "config": {
+    "name": "Chalupa Na Chmelnici",
+    "location": "Třeboň",
+    "address": "Na Chmelnici 387, 379 01 Třeboň",
+    "gps": {
+      "lat": 49.006531,
+      "lng": 14.773852,
+      "zoom": 16
+    },
+    "contacts": {
+      "phone": "+420 724 233 469",
+      "email": "info@chalupanachmelnici.cz",
+      "web": "https://www.chalupanachmelnici.cz"
+    },
+    "external_links": {
+      "booking": "https://www.booking.com/hotel/cz/chalupa-na-chmelnici.cs.html",
+      "echalupy": "https://www.e-chalupy.cz/chalupa-trebon-ubytovani-na-chmelnici-o3823",
+      "mapycz": "https://mapy.cz/s/podezubunu"
+    }
+  },
+  "amenities_global": [
+    {"id": "wifi", "icon": "fa-wifi", "label": "Wi-Fi 6 zdarma"},
+    {"id": "parking", "icon": "fa-car", "label": "Parkování u objektu"},
+    {"id": "garden", "icon": "fa-tree", "label": "Oplocená zahrada"},
+    {"id": "grill", "icon": "fa-fire", "label": "Venkovní gril a ohniště"},
+    {"id": "bikes", "icon": "fa-bicycle", "label": "Úschovna kol (uzamykatelná)"},
+    {"id": "pets", "icon": "fa-paw", "label": "Psi povoleni (po dohodě)"},
+    {"id": "pingpong", "icon": "fa-table-tennis-paddle-ball", "label": "Stolní tenis"},
+    {"id": "heating", "icon": "fa-temperature-arrow-up", "label": "Podlahové vytápění"}
+  ],
+  "units": [
+    {
+      "id": "celka",
+      "active": true,
+      "title": "Celá chalupa (max. 11 osob)",
+      "capacity": 11,
+      "price_main": 4500,
+      "price_off": 3800,
+      "short_desc": "Exkluzivní pronájem celého objektu pro skupinu přátel nebo rodiny.",
+      "long_desc": "Při pronájmu celého objektu získáte naprosté soukromí. K dispozici jsou všechny 3 apartmány, společenská místnost, kompletní zázemí a zahrada. Ideální pro cyklovýlety nebo lázeňské pobyty.",
+      "features": ["3 ložnice", "3 koupelny", "Společná zahrada", "Plná výbava"],
+      "gallery": ["ext-1.jpg", "ext-2.jpg", "zahrada.jpg"]
+    },
+    {
+      "id": "apartman",
+      "active": true,
+      "title": "Velký Apartmán (5 osob)",
+      "capacity": 5,
+      "price_main": 2200,
+      "price_off": 1900,
+      "short_desc": "Prostorný apartmán v přízemí s vlastní kuchyní.",
+      "long_desc": "Tradičně zařízený apartmán s důrazem na pohodlí. Obsahuje ložnici s manželskou postelí a jednolůžkem, obývací pokoj s rozkládací pohovkou a plně vybavenou kuchyňskou linku.",
+      "features": ["Ložnice", "Obývací pokoj", "Vlastní kuchyně", "Vana"],
+      "gallery": ["apt-1.jpg", "apt-2.jpg", "apt-kuchyn.jpg"]
+    },
+    {
+      "id": "studio",
+      "active": true,
+      "title": "Rodinné Studio (4 osoby)",
+      "capacity": 4,
+      "price_main": 1600,
+      "price_off": 1400,
+      "short_desc": "Moderní otevřené studio s patrem na spaní.",
+      "long_desc": "Vzdušné studio spojující moderní design a praktičnost. Nabízí kuchyňský kout, jídelní kout a pohodlné spaní pro 4 osoby.",
+      "features": ["Studio", "Kuchyňský kout", "Sprcha", "TV"],
+      "gallery": ["std-1.jpg", "std-2.jpg"]
+    },
+    {
+      "id": "dvorek",
+      "active": true,
+      "title": "Studio Dvorek (2 osoby)",
+      "capacity": 2,
+      "price_main": 1100,
+      "price_off": 950,
+      "short_desc": "Klidné studio s přímým vstupem na zahradu.",
+      "long_desc": "Ideální pro páry hledající klid. Studio má přímý vstup na vnitřní dvorek, kde si můžete vychutnat ranní kávu na čerstvém vzduchu.",
+      "features": ["Manželská postel", "Přímý vstup ven", "Koupelna", "Klidná zóna"],
+      "gallery": ["dvr-1.jpg", "dvr-2.jpg"]
+    }
+  ],
+  "poi": [
+    {"name": "Lázně Berta", "dist": "450 m", "type": "wellness"},
+    {"name": "Historické náměstí", "dist": "750 m", "type": "culture"},
+    {"name": "Rybník Svět", "dist": "1.2 km", "type": "nature"},
+    {"name": "Pivovar Regent", "dist": "900 m", "type": "food"}
+  ]
+}
